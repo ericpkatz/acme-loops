@@ -4,12 +4,34 @@
   </head>
   <body>
     <script>
+      function countDown(start){
+        /*
+        for(let i = start; i > 0; i = i - 1){
+          console.log(i);
+        }
+        */
+       let i = start;
+       while(i > 0){
+        console.log(i);
+        //i = i - 1;
+        i--;
+       }
+      }
+
       function countUp(limit){
-        for(let i = 1; i <= limit; i = i + 1){
+        for(let i = 1; i <= limit; i++){
           console.log(i);
         }
       }
-      countUp(10);
+
+      function wordLoop(str){
+        for(let i = 0; i < str.length; i++){
+          console.log(str[i]);
+        }
+      }
+      //countUp(10);
+      //countDown(10);
+      //wordLoop('bar');
 
     </script>
   </body>
