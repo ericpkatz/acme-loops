@@ -56,13 +56,35 @@
         }
         return result;
       }
+
+      function crazyCaps(txt){
+        let result = '';
+        for(let i = 0; i < txt.length; i = i + 1){
+          let ltr = txt[i];
+          if(i % 2 === 1){
+            ltr = ltr.toUpperCase();
+          }
+          result = result + ltr;
+        }
+        return result;
+      }
+
+      function expo(x, y){
+        let result = 1;
+        for(let i = 0; i < y; i = i + 1){
+          result = result * x;
+        }
+        return result;
+      }
       //countUp(10);
       //countDown(10);
       //wordLoop('bar');
       //const result = removeVowels('baaz');
       //console.log(result);
-      console.log(vowelCount('foo'));
-      console.log(vowelCount('bar'));
+      //console.log(vowelCount('foo'));
+      //console.log(vowelCount('bar'));
+      //console.log(crazyCaps('prof'));//fOo
+      console.log(expo(2, 3));//8
 
     </script>
   </body>
